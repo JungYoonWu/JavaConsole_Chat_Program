@@ -158,20 +158,6 @@ public class ChatClient {
         System.out.println("/logs - 서버 로그 확인");
     }
 
-    // 접속 중인 사용자 목록 표시
-    private void showUserList(String msg) {
-        System.out.println("접속 중인 사용자 목록:");
-        String[] users = msg.split("\n");
-        for (String user : users) {
-            System.out.println(user);
-        }
-    }
-
-    // 서버 로그 표시
-    private void showLogs(String msg) {
-        System.out.println("서버 로그:\n" + msg);
-    }
-
     // 메인 메서드
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
